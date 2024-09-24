@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
-import './app.scss'; 
-import Nav from './components/Nav'; 
+import "./app.scss";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div>
       <header>
         <h1 className="mainlogo">
-          <img src="" alt="logo granulo" /> 
+          <img src="" alt="logo granulo" />
         </h1>
-        <Nav /> 
+        <Nav />
       </header>
 
       <main>

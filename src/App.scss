@@ -1,20 +1,15 @@
-@use './style/variable.scss' as *;
-@import './style/home.scss';
+@use "./style/variable.scss" as *;
+@import "./style/home.scss";
 @import "./style//nav.scss";
 
-*{
-    background-color: $bgcolor;
-    box-sizing: border-box;
-    margin: 0;
+* {
+  background-color: $bgcolor;
+  box-sizing: border-box;
+  margin: 0;
 }
-.mainlogo{display: flex;
-justify-content: center;
-align-items:center;
-margin: 20px;}
-
-
-
-
-
-
-  
+.mainlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}

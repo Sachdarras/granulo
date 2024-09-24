@@ -1,38 +1,36 @@
 // home.scss
-@use './variable' as *; 
+@use "./variable" as *;
 
 .flex-container {
   display: flex;
-  justify-content: space-evenly; 
-  align-items: stretch; 
-  margin-top: 50px; 
-  width: 100%; 
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .container1,
 .container2 {
-  
   padding: 1.5rem;
- border-radius: 50px;
-  margin: 1rem; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
+  border-radius: 50px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 2px 4px $greenlogo; 
-  box-sizing: border-box; 
-  height: auto
-
+  box-shadow: 0 2px 4px $greenlogo;
+  box-sizing: border-box;
+  height: auto;
 }
 
 .container1 h2,
 .container2 h2 {
-  color: $greenlogo; 
-  font-size: 40px; 
+  color: $greenlogo;
+  font-size: 40px;
 }
 
 .container1 p,
 .container2 p {
-  color: white; 
-  font-size: 35px; 
+  color: white;
+  font-size: 35px;
 }
