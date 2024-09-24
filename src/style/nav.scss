@@ -1,0 +1,18 @@
+@use './variable' as *; 
+
+.navi {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  a {
+    color: white; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    font-size: 36px;
+      transition: color 0.3s ease;
+ &:hover {
+       color: $greenlogo;
+    }}}
