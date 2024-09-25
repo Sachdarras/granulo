@@ -1,0 +1,88 @@
+@use "./variable" as *;
+
+.contact {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: $bgcolor;
+  border: 2px solid $greenlogo;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px $greenlogo;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.introcontact h2 {
+  text-align: center;
+  color: $greenlogo;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.introcontact p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: white;
+  text-align: center;}
+
+
+  .contact label{
+  text-align: center;
+ font-size: 25px;
+}
+
+
+
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.form-group {
+  margin-bottom: 25px; /* Augmenter l'espacement entre les groupes */
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $greenlogo;
+  font-size: 20px;
+  transition: border-color 0.3s;
+  width: 100%; /* Pour que les inputs prennent toute la largeur */
+  color: white;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: $greenlogo;
+  outline: none;
+}
+
+.contact button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: $greenlogo;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: darken($greenlogo, 10%);
+}
+
+.captcha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+.captcha button {
+  margin-top: 10px;
+}

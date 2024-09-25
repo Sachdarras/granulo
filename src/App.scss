@@ -1,6 +1,8 @@
 @use "./style/variable.scss" as *;
 @import "./style/home.scss";
 @import "./style//nav.scss";
+@import "./style/equipe.scss";
+@import "./style/contact.scss";
 
 * {
   background-color: $bgcolor;

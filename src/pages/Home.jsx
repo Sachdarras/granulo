@@ -2,17 +2,15 @@ function Home() {
   return (
     <>
       <div className="flex-container">
-        <div className="container1">
+        <section className="container1">
           <h2>Granulo</h2>
-          <br />
           <p>Bureau d'études techniques</p>
-        </div>
-        <div className="container2">
+        </section>
+        <section className="container2">
           <h2>Granulo Maçonnerie</h2>
-          <br />
           <p>Entreprise de maçonnerie terre crue,</p>
           <p>pierre et matériaux biosourcés</p>
-        </div>
+        </section>
       </div>
 
       <section className="intro">
@@ -26,6 +24,7 @@ function Home() {
           <strong>Conseil - Conception - Chantier</strong>
         </p>
       </section>
+
       <section className="localisation">
         <p>
           Couvrant le <strong>Grand Ouest</strong>, Granulo s’appuie sur les
@@ -37,14 +36,12 @@ function Home() {
         </p>
         <p>
           Notre activité concerne <strong>la construction neuve</strong> mais
-          surtout{" "}
-          <strong>a rénovation et la réhabilitation du bâti existant</strong>l,
-          pour la maîtrise d’oeuvre publique, privée et les entreprises de
-          construction.
+          surtout <strong>la rénovation et la réhabilitation du bâti existant</strong>, pour la maîtrise d’oeuvre publique, privée et les entreprises de construction.
         </p>
       </section>
+
+      <h2 className="valeurtitre">Nos Valeurs</h2>
       <div className="valeurcontainer">
-        <h2>Nos Valeurs</h2>
         <section className="valeur1">
           <h3>
             <strong> Une entreprise collective, réaliste et optimiste</strong>
@@ -69,6 +66,7 @@ function Home() {
           </p>
         </section>
       </div>
+
       <div className="missions">
         <h2>Nos missions</h2>
         <p>
@@ -82,6 +80,9 @@ function Home() {
           réalisation. Nos missions sont regroupées selon les 3 champs
           d’activité suivants :
         </p>
+      </div>
+
+      <div className="missionscontainer">
         <section className="conseil">
           <h3>Conseil</h3>
           <ul>
@@ -91,6 +92,7 @@ function Home() {
             <li>Formations</li>
           </ul>
         </section>
+
         <section className="conception">
           <h3>Conception</h3>
           <ul>
@@ -103,6 +105,7 @@ function Home() {
             </li>
           </ul>
         </section>
+
         <section className="chantier">
           <h3>Chantier</h3>
           <ul>
@@ -112,35 +115,41 @@ function Home() {
             </li>
             <li>
               Assistance technique aux entreprises sur chantier ATE : essais,
-              dessins d’exécution,sécurisation de la ressource, suivi
-              logistique,coordination, suivi de chantier{" "}
+              dessins d’exécution, sécurisation de la ressource, suivi
+              logistique, coordination, suivi de chantier
             </li>
           </ul>
         </section>
       </div>
+
       <div className="clients">
         <h2>Nos Clients</h2>
+      </div>
+
+      <div className="clientscontainer">
         <section className="privé">
           <h3>Privé</h3>
           <ul>
             <li>Architectes et Maitres d'oeuvre</li>
-            <li> Entreprises de construction et constructeurs</li>
-            <li> Maitres d'ouvrages privés</li>
-            <li>Acteurs de la formation </li>
-            <li> Aménageurs privés</li>
+            <li>Entreprises de construction et constructeurs</li>
+            <li>Maitres d'ouvrages privés</li>
+            <li>Acteurs de la formation</li>
+            <li>Aménageurs privés</li>
           </ul>
         </section>
+
         <section className="public">
           <h3>Public</h3>
           <ul>
             <li>Maitres d'ouvrage publique</li>
             <li>Services "techniques"</li>
-            <li>Institutions </li>
+            <li>Institutions</li>
             <li>Organismes de recherche</li>
-            <li>Enseignement </li>
+            <li>Enseignement</li>
             <li>Aménageurs publics</li>
           </ul>
         </section>
+
         <section className="particuliers">
           <h3>Particuliers</h3>
           <ul>

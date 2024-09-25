@@ -1,0 +1,90 @@
+@use "./variable" as *;
+
+/* Style pour la section "À propos de nous" */
+.apropos h2 {
+  text-align: center;
+  font-size: 35px;
+  color: $greenlogo;
+  margin: 20px auto;
+  text-decoration: underline white;
+  text-underline-offset: 10px;
+}
+
+.apropos p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 1200px;
+  line-height: 1.6;
+}
+
+/* Style pour la section "Notre équipe" */
+.team h2 {
+  text-align: center;
+  font-size: 35px;
+  color: $greenlogo;
+  margin: 20px auto;
+  text-decoration: underline white;
+  text-underline-offset: 10px;
+}
+
+.teamcontainer {
+  display: flex;
+  justify-content: space-around; /* Assure un espacement uniforme entre les sections */
+  align-items: stretch; /* Aligne toutes les sections verticalement */
+  flex-wrap: wrap; /* Permet de passer à la ligne si la largeur n'est pas suffisante */
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centre la teamcontainer */
+}
+
+.teamcontainer section {
+
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px $greenlogo;
+  width: 350px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.teamcontainer h3 {
+  font-size: 30px;
+  color: $greenlogo;
+  margin-bottom: 15px;
+}
+
+.teamcontainer p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.teamcontainer blockquote {
+  font-size: 18px;
+  font-style: italic;
+  color: white;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 90%;
+}
+
+
+.teamcontainer img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px $greenlogo;
+}
