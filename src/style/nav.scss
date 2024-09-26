@@ -3,17 +3,116 @@
 .navi {
   margin: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; 
   align-items: center;
 
-  a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 36px;
-    transition: color 0.3s ease;
+  .menu-icon {
+    display: none; // Masquer l'icône par défaut
+    font-size: 36px; // Taille du symbole burger
+    cursor: pointer;
+    margin-left: auto; // Pousse l'icône vers la droite
+    color: white; // Couleur blanche par défaut
+
     &:hover {
-      color: $greenlogo;
+      color: $greenlogo; // Changer la couleur au survol
     }
   }
+
+  .nav-links {
+    display: flex; // Afficher les liens horizontalement
+
+    a {
+      color: white; // Couleur par défaut des liens
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 36px; // Taille de la police des liens
+      margin-inline: 250px; // Ajustez cela si nécessaire
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $greenlogo; // Couleur des liens au survol
+      }
+    }
+
+    .close-button {
+      display: none; // Masquer par défaut
+      font-size: 36px; // Taille du bouton de fermeture
+      color: white; // Couleur de la croix
+      background: none; // Pas de fond
+      border: none; // Pas de bordure
+      cursor: pointer; // Curseur en forme de main
+      margin: 20px; // Espacement autour
+
+      &:hover {
+        color: $greenlogo; // Changer la couleur de la croix au survol
+      }
+    }
+  }
+
+  // Styles pour les écrans moyens (max-width: 1460px)
+  @media (max-width: 1460px) {
+    .menu-icon {
+      display: block; // Afficher l'icône burger
+    }
+
+    .nav-links {
+      display: none; // Cacher les liens par défaut
+      flex-direction: column; // Alignement vertical
+      position: fixed; // Positionner le menu à droite
+      right: 0; // Aligner à droite
+      top: 0; // Aligner en haut
+      background: rgba(49, 65, 83, 0.9); // Utiliser bgcolor avec transparence
+      width: 220px; // Ajuster la largeur du menu pour être moins large
+      height: 100%; // Hauteur complète
+      padding: 30px; // Espacement interne
+      z-index: 1000; // Assurez-vous que le menu est au-dessus
+
+      &.open {
+        display: flex; // Afficher les liens quand le menu est ouvert
+      }
+
+      .close-button {
+        display: block; // Afficher le bouton de fermeture
+      }
+
+      a {
+        color: white; // Couleur des liens dans le menu
+        margin: 15px 0; // Espacement vertical entre les liens
+        font-size: 28px; // Taille de la police des liens
+      }
+    }
+  }
+
+  @media (max-width: 770px) {
+    .menu-icon {
+      display: block; // Afficher l'icône burger
+      font-size: 28px; // Ajuster la taille de l'icône pour les petits écrans
+    }
+
+    .nav-links {
+      display: none; // Cacher les liens par défaut
+      width: 220px; // Largeur fixe pour le menu
+      padding: 20px; // Réduire l'espacement interne
+      height: 100%; // Hauteur complète pour le menu
+      background: rgba(49, 65, 83, 0.9); // Fond transparent
+      position: fixed; // Rester à droite
+      right: 0; // Aligner à droite
+      top: 0; // Aligner en haut
+      z-index: 1000; // Assurez-vous que le menu est au-dessus
+
+      &.open {
+        display: flex; // Afficher les liens quand le menu est ouvert
+        flex-direction: column; // Alignement vertical
+      }
+
+      a {
+        font-size: 24px; // Ajuster la taille des liens
+        margin: 10px 0; // Réduire les marges verticales
+      }
+
+      // Optionnel : pour mieux gérer le scroll si le menu dépasse la hauteur de l'écran
+      overflow-y: auto; // Permettre le défilement vertical si nécessaire
+    }
+  }
+
 }

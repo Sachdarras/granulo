@@ -3,7 +3,7 @@
 /* Style pour la section "À propos de nous" */
 .apropos h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px; // Ajusté pour petits écrans
   color: $greenlogo;
   margin: 20px auto;
   text-decoration: underline white;
@@ -12,18 +12,18 @@
 
 .apropos p {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px; // Ajusté pour petits écrans
   color: white;
   margin: 20px auto;
   padding: 10px;
-  max-width: 1200px;
+  max-width: 90%; // Ajusté pour petits écrans
   line-height: 1.6;
 }
 
 /* Style pour la section "Notre équipe" */
 .team h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px; // Ajusté pour petits écrans
   color: $greenlogo;
   margin: 20px auto;
   text-decoration: underline white;
@@ -32,59 +32,87 @@
 
 .teamcontainer {
   display: flex;
-  justify-content: space-around; /* Assure un espacement uniforme entre les sections */
-  align-items: stretch; /* Aligne toutes les sections verticalement */
-  flex-wrap: wrap; /* Permet de passer à la ligne si la largeur n'est pas suffisante */
+  flex-wrap: wrap; // Permet de passer à la ligne si la largeur n'est pas suffisante
+  justify-content: center; // Centre les sections
+  align-items: stretch; // Aligne toutes les sections verticalement
   margin-top: 50px;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; /* Centre la teamcontainer */
+  max-width: 100%; // Permet d'occuper toute la largeur
+ 
+  margin: 0 auto; // Centre la teamcontainer
 }
 
 .teamcontainer section {
-
-  padding: 2rem;
+  padding: 1.5rem; // Ajusté pour petits écrans
   border-radius: 15px;
-  margin: 20px;
+  margin: 10px; // Réduit la marge
+   margin-inline: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   box-shadow: 0 2px 4px $greenlogo;
-  width: 350px;
-  max-width: 100%;
+  width: 100%; // Permet à chaque section d'occuper toute la largeur
+  max-width: 300px; // Limite la largeur maximale
   box-sizing: border-box;
 }
 
 .teamcontainer h3 {
-  font-size: 30px;
+  font-size: 25px; // Ajusté pour petits écrans
   color: $greenlogo;
-  margin-bottom: 15px;
+  margin-bottom: 10px; // Réduit la marge
 }
 
 .teamcontainer p {
-  font-size: 20px;
+  font-size: 18px; // Ajusté pour petits écrans
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px; // Réduit la marge
   line-height: 1.6;
 }
 
 .teamcontainer blockquote {
-  font-size: 18px;
+  font-size: 16px; // Ajusté pour petits écrans
   font-style: italic;
   color: white;
-  margin: 20px auto;
+  margin: 10px auto; // Réduit la marge
   padding: 10px;
   max-width: 90%;
 }
 
-
 .teamcontainer img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px; // Ajusté pour petits écrans
+  height: 120px; // Ajusté pour petits écrans
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 15px; // Réduit la marge
   box-shadow: 0 2px 4px $greenlogo;
+}
+
+/* Media Queries pour rendre la page responsive */
+@media (max-width: 450px) {
+  .apropos h2, .team h2 {
+    font-size: 28px; // Réduit la taille du titre pour les petits écrans
+  }
+
+  .apropos p,
+  .teamcontainer p,
+  .teamcontainer blockquote {
+    font-size: 16px; // Réduit la taille de la police pour les petits écrans
+  }
+
+  .teamcontainer {
+    flex-direction: column; // Aligne les sections en colonne
+    align-items: center; // Centre les sections
+  }
+
+  .teamcontainer section {
+    width: 90%; // Utilise 90% de la largeur
+    margin: 10px 0; // Réduit la marge entre les sections
+  }
+
+  .teamcontainer img {
+    width: 100px; // Ajusté pour petits écrans
+    height: 100px; // Ajusté pour petits écrans
+  }
 }
