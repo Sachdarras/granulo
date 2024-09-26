@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import "./app.scss";
+import "../src/style/App.scss";
 import Nav from "./components/Nav";
 import logo from "./assets/logo/logo.png";
 

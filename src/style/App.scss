@@ -1,8 +1,8 @@
-@use "./style/variable.scss" as *;
-@import "./style/home.scss";
-@import "./style//nav.scss";
-@import "./style/equipe.scss";
-@import "./style/contact.scss";
+@use "./variable.scss" as *;
+@import "./home.scss";
+@import "./nav.scss";
+@import "./equipe.scss";
+@import "./contact.scss";
 
 * {
   background-color: $bgcolor;
