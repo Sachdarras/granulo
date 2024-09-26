@@ -25,9 +25,9 @@ function Equipe() {
         </p>
       </section>
       <div className="team">
-        <h2>Notre équipe</h2> 
-        </div>
-        <div className="teamcontainer">
+        <h2>Notre équipe</h2>
+      </div>
+      <div className="teamcontainer">
         <section className="team1">
           <img src="" alt="Marion Taupin" />
           <h3>Marion Taupin</h3>
@@ -75,7 +75,7 @@ function Equipe() {
             humaines et de la technique des matériaux bio-sourcés.”
           </blockquote>
         </section>
-     </div>
+      </div>
     </>
   );
 }

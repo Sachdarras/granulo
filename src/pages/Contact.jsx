@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    company: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    company: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
     isRobot: false,
   });
 
-  const [captcha, setCaptcha] = useState('');
+  const [captcha, setCaptcha] = useState("");
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -30,35 +30,41 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const captchaInput = document.getElementById('captchaInput').value;
+    const captchaInput = document.getElementById("captchaInput").value;
     if (captchaInput !== captcha) {
-      alert('Captcha incorrect, veuillez réessayer.');
+      alert("Captcha incorrect, veuillez réessayer.");
       return;
     }
 
-    emailjs.send('service_6io9lgn', 'template_adbxx4j', formData, 'FbmETirF_HLofrreA')
+    emailjs
+      .send(
+        "service_6io9lgn",
+        "template_adbxx4j",
+        formData,
+        "FbmETirF_HLofrreA",
+      )
       .then((response) => {
-        alert('Votre message a été envoyé avec succès!');
+        alert("Votre message a été envoyé avec succès!");
         setFormData({
-          firstName: '',
-          lastName: '',
-          company: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: '',
+          firstName: "",
+          lastName: "",
+          company: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
           isRobot: false,
         });
         handleCaptchaChange();
       })
       .catch((error) => {
-        alert('Une erreur est survenue lors de l\'envoi de votre message.');
+        alert("Une erreur est survenue lors de l'envoi de votre message.");
       });
   };
 
   return (
     <>
-      <div className='introcontact'>
+      <div className="introcontact">
         <h2>Contactez-nous</h2>
         <p>Voici comment nous contacter.</p>
       </div>
@@ -156,11 +162,7 @@ function Contact() {
               Regénérer
             </button>
             <label htmlFor="captchaInput">Veuillez entrer le captcha :</label>
-            <input
-              type="text"
-              id="captchaInput"
-              required
-            />
+            <input type="text" id="captchaInput" required />
           </div>
           <button type="submit">Envoyer</button>
         </form>

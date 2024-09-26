@@ -2,7 +2,7 @@
 
 .flex-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   margin-top: 50px;
   width: 100%;
@@ -20,8 +20,8 @@
   text-align: center;
   box-shadow: 0 2px 4px $greenlogo;
   box-sizing: border-box;
-  width: 450px; 
-  height: 300px; 
+  width: 450px;
+  height: 300px;
 }
 
 .container1 h2,
@@ -84,7 +84,7 @@
   text-align: center;
   box-shadow: 0 2px 4px $greenlogo;
   box-sizing: border-box;
-  height: 600px; 
+  height: 600px;
   max-width: 500px;
 }
 
@@ -145,7 +145,7 @@
   margin: 1rem;
   box-shadow: 0 2px 4px $greenlogo;
   box-sizing: border-box;
-  height: 650px; 
+  height: 650px;
   width: 350px;
   text-align: center;
 }
@@ -179,14 +179,16 @@
 }
 
 @media (max-width: 900px) {
-  .container1, .container2 {
+  .container1,
+  .container2 {
     width: 80%; /* Ajuster la largeur */
     height: auto; /* Ajuster la hauteur pour un meilleur équilibre */
   }
 }
 
 @media (max-width: 600px) {
-  .missionscontainer, .clientscontainer {
+  .missionscontainer,
+  .clientscontainer {
     flex-direction: column;
     align-items: center;
   }
@@ -200,29 +202,38 @@
 
 /* Ajouts pour les très petits écrans */
 @media (max-width: 450px) {
-  .container1, .container2 {
+  .container1,
+  .container2 {
     width: 95%; /* Augmenter la largeur sur les très petits écrans */
     height: auto; /* Laisser la hauteur s'ajuster */
     padding: 1rem; /* Ajuster le rembourrage */
   }
 
-  .valeur1, .valeur2 {
+  .valeur1,
+  .valeur2 {
     padding: 1.5rem; /* Réduire le rembourrage pour les valeurs */
     height: auto; /* Laisser la hauteur s'ajuster */
     max-width: none; /* Supprimer la limite de largeur */
   }
 
-  .valeur1 h3, .valeur2 h3,
-  .missionscontainer h3, .clientscontainer h3 {
+  .valeur1 h3,
+  .valeur2 h3,
+  .missionscontainer h3,
+  .clientscontainer h3 {
     font-size: 28px; /* Réduire la taille de la police des titres */
   }
 
-  .valeur1 p, .valeur2 p,
-  .missionscontainer li, .clientscontainer li {
+  .valeur1 p,
+  .valeur2 p,
+  .missionscontainer li,
+  .clientscontainer li {
     font-size: 20px; /* Réduire la taille de la police pour le texte */
   }
 
-  .intro, .localisation, .missions p, .clients p {
+  .intro,
+  .localisation,
+  .missions p,
+  .clients p {
     font-size: 20px; /* Réduire la taille de la police pour le texte introductif */
   }
 }

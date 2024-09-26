@@ -1,5 +1,3 @@
-
-
 function Home() {
   return (
     <>
@@ -38,7 +36,10 @@ function Home() {
         </p>
         <p>
           Notre activité concerne <strong>la construction neuve</strong> mais
-          surtout <strong>la rénovation et la réhabilitation du bâti existant</strong>, pour la maîtrise d’oeuvre publique, privée et les entreprises de construction.
+          surtout{" "}
+          <strong>la rénovation et la réhabilitation du bâti existant</strong>,
+          pour la maîtrise d’oeuvre publique, privée et les entreprises de
+          construction.
         </p>
       </section>
 

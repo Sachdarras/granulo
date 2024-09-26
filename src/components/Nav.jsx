@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +14,11 @@ function Nav() {
           &#9776; {/* Symbole du menu burger */}
         </div>
       )}
-      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <button className="close-button" onClick={toggleMenu}>&times;</button> {/* Bouton de fermeture */}
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <button className="close-button" onClick={toggleMenu}>
+          &times;
+        </button>{" "}
+        {/* Bouton de fermeture */}
         <a href="/home">Accueil</a>
         <a href="/equipe">Equipe</a>
         <a href="/contact">Contact</a>

@@ -38,7 +38,7 @@
   margin-top: 50px;
   width: 100%;
   max-width: 100%; // Permet d'occuper toute la largeur
- 
+
   margin: 0 auto; // Centre la teamcontainer
 }
 
@@ -46,7 +46,7 @@
   padding: 1.5rem; // Ajusté pour petits écrans
   border-radius: 15px;
   margin: 10px; // Réduit la marge
-   margin-inline: 100px;
+  margin-inline: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +91,8 @@
 
 /* Media Queries pour rendre la page responsive */
 @media (max-width: 450px) {
-  .apropos h2, .team h2 {
+  .apropos h2,
+  .team h2 {
     font-size: 28px; // Réduit la taille du titre pour les petits écrans
   }
 

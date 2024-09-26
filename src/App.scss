@@ -8,17 +8,26 @@
   background-color: $bgcolor;
   box-sizing: border-box;
   margin: 0;
- 
 }
 .mainlogo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px
+  margin: 20px;
 }
-h2,h3{font-family: $yummo;}
-p,a,li, input,label,blockquote{font-family: $roboto;}
+h2,
+h3 {
+  font-family: $yummo;
+}
+p,
+a,
+li,
+input,
+label,
+blockquote {
+  font-family: $roboto;
+}
 
-
-
-.mainlogo img {width: 500px;}
+.mainlogo img {
+  width: 500px;
+}
